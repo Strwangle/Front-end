@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function minimum(){
+        if(a<b || a<c || a<d){
+            min=a;
+        }
+        else if(b<a || b<c || b<d){
+            min=b;
+        }
+        else if(c<a || c<b || c<d){
+            min=c;
+        }
+        else if(d<a || d<b || d<c){
+            min=d;
+        }
+        alert(min);
+      
+    }
+    let a = Number(prompt("a :"));
+    let b = Number(prompt("b :"));
+    let c = Number(prompt("c :"));
+    let d = Number(prompt("d :"));
+    minimum(a, b, c, d);
+    function evennumbers(){
+        let sum = 0;
+        for (let i = 1; i <= 10; i++) {
+           if (i % 2 === 0) {
+            sum += i;
+           }
+    }
+    alert(sum);
+    } 
+   function evennumbers() {
+        let sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                sum += i;
+            }
+        }
+        alert("1-10 hurtleh tegsh too niilber: "+sum);
+    }
+
+    evennumbers(); 
+   function oddnumbers() {
+    let odd = [];
+    for (let i = 1; i <= 20; i++) {
+        if (i % 2 !== 0) {
+            odd.push(i);
+        }
+    }
+    alert("sondgoi too 1-20: " + odd.join(", "));
+}
+
+oddnumbers();
+ function Prime(n) {
+    if (n <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+
+
+let number = Number(prompt("toogoo oruul:"));
+if (Prime(number)) {
+    alert(number + " prime number bna");
+} else {
+    alert(number + " prime number bish bna");
+}
+    </script>   
+</body>
+</html>
